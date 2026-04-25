@@ -1,5 +1,29 @@
+# Dependências
 node_modules/
+package-lock.json
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Temporários e Build
+dist/
+build/
 .agents/
 .gemini/
+
+# Variáveis de Ambiente
 .env
-package-lock.json
+.env.local
+.env.*.local
