@@ -70,4 +70,47 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // HTTPS Verification (Redirect to HTTPS if not local and not secure)
+    if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        location.replace(`https:${location.href.substring(location.protocol.length)}`);
+    }
+
+    // Helper to sanitize input (prevent basic XSS)
+    const sanitize = (str) => {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    };
+
+    // Contact Form Submission with Sanitization & Validation
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: sanitize(document.getElementById('name').value.trim()),
+                email: sanitize(document.getElementById('email').value.trim()),
+                service: sanitize(document.getElementById('service').value),
+                message: sanitize(document.getElementById('message').value.trim())
+            };
+
+            // Basic Validation
+            if (!formData.name || !formData.email || !formData.message) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+
+            console.log('Dados sanitizados para envio:', formData);
+            alert('Mensagem enviada com sucesso! (Simulação)');
+            contactForm.reset();
+        });
+    }
 });
