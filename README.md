@@ -1,4 +1,4 @@
-# 🏥 Instituto Ouvir e Brincar - Landing Page Premium
+# 🏥 Dr. Laura Fono - Landing Page Premium
 
 Este repositório contém o código-fonte da Landing Page institucional do **Instituto Ouvir e Brincar**. O projeto foi concebido com foco em alta performance, design premium e acessibilidade, servindo como a porta de entrada digital para pacientes que buscam excelência em fonoaudiologia.
 
