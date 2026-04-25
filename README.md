@@ -1,6 +1,6 @@
 # 🏥 Dr. Laura Fono - Landing Page Premium
 
-Este repositório contém o código-fonte da Landing Page institucional do **Instituto Ouvir e Brincar**. O projeto foi concebido com foco em alta performance, design premium e acessibilidade, servindo como a porta de entrada digital para pacientes que buscam excelência em fonoaudiologia.
+Este repositório contém o código-fonte da Landing Page institucional da **Dra. Laura Fono**. O projeto foi concebido com foco em alta performance, design premium e acessibilidade, servindo como a porta de entrada digital para pacientes que buscam excelência em fonoaudiologia.
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Pronto%20para%20Produ%C3%A7%C3%A3o-success?style=for-the-badge)
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge)
@@ -72,4 +72,4 @@ Como Arquiteto de Software, foram aplicadas as seguintes medidas:
 
 ---
 
-Desenvolvido com ❤️ para o **Instituto Ouvir e Brincar**.
+Desenvolvido com ❤️ para a **Dra Laura Fono**.
